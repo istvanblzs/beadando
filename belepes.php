@@ -29,6 +29,10 @@
                 <h1>Bejelentkezett:</h1>
                 Azonosító: <strong><?= $row['id'] ?></strong><br><br>
                 Név: <strong><?= $row['csaladi_nev']." ".$row['uto_nev'] ?></strong>
+				
+				<a href="home.html">Továbblépés</a>
+				
+				
             <?php } else { ?>
                 <h1>A bejelentkezés nem sikerült!</h1>
                 <a href="pelda.html" >Próbálja újra!</a>
