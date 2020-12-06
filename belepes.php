@@ -29,8 +29,10 @@
                 <h1>Bejelentkezett:</h1>
                 Azonosító: <strong><?= $row['id'] ?></strong><br><br>
                 Név: <strong><?= $row['csaladi_nev']." ".$row['uto_nev'] ?></strong>
-				
-				<a href="home.html">Továbblépés</a>
+				<br><br>
+				<a href="comment2.html">Komment írás</a>
+				<br><br>
+				<a href="home.html">Vissza a főoldalra</a>
 				
 				
             <?php } else { ?>
