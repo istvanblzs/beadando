@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    var x = $("form").serializeArray();
+    $.each(x, function(i, field){
+      $("#results").append(field.name + ":" + field.value + " ");
+    });
+  });
+});
+</script>
+</head>
+<body>
+<br>
+<br>
+<a href="home.html">Vissza a főoldalra</a>
+<br>
+<br>
+<form action="">
+  Keresztnév: <input type="text" name="Keresztnév" value="Teszt"><br>
+  Vezetéknév: <input type="text" name="Vezetéknév" value="Elek"><br>
+</form>
+<br>
+<br>
+<button>Szerializáld a form értékeit</button>
+<br>
+<br>
+<div id="results"></div>
+
+</body>
+</html>
